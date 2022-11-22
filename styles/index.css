@@ -40,14 +40,11 @@
 html,
 body {
   width: 100%;
-  /* height: 100vh; */
+  height: 100%;
   margin: 0;
+  font-family: 'DM Sans', sans-serif;
 }
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-size: cover;
-  /* overflow: hidden; */
-  /* justify-content: center; */
   /* TODO: you can make it mid-based page by adding display: flex */
   /* display: flex; */
   background-color: var(--app-container);
@@ -56,12 +53,21 @@ button,
 a {
   cursor: pointer;
 }
+
+.background {
+  padding-top: 90px;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 .app-container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
-  position: relative;
+  /* height: 100%; */
+  /* position: relative; */
   background-color: var(--app-container);
   transition: 0.2s;
   max-width: 1800px;
@@ -82,20 +88,16 @@ a {
   padding: 24px 24px 24px 24px;
 }
 
-.background {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
 .app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 16px 24px;
+  /* background-color: var(--projects-section); */
+  /* border-radius: 32px; */
+  /* padding: 32px 32px 0 32px; */
+  padding-right: 14px;
+  padding-top: 14px;
   position: relative;
 }
 .app-header-left,
@@ -146,9 +148,16 @@ a {
 }
 
 .hero-section {
-  background-color: var(--projects-section);
-  height: 100%;
+  background: #000
+    url(https://dl.dropboxusercontent.com/s/3sr4z4imzudr853/bgstar.jpg) center
+    center fixed;
+  background-size: cover;
+  /* background-color: var(--projects-section); */
+  position: relative;
+  /* height: 100%; */
   width: 100%;
+  z-index: -1;
+  color: #1ff1c2;
 }
 .footer-section {
   background-color: var(--projects-section);
