@@ -21,34 +21,33 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
-    <!-- Nav-Section -->
-    <div class="app-header">
-      <div class="app-header-left">
-        <p class="app-name">MAYANK SINGH TOMAR</p>
-      </div>
-      <div class="app-header-right">
-        <button class="mode-switch" title="Switch Theme">
-          <svg
-            class="moon"
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <defs></defs>
-            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-    <!-- Nav-Section -->
     <!-- Hero-Section -->
     <div class="hero-section">
-      <h1>Hero Section</h1>
+      <!-- Nav-Section -->
+      <div class="app-header">
+        <div class="app-header-left">
+          <p class="app-name">MAYANK SINGH TOMAR</p>
+        </div>
+        <div class="app-header-right">
+          <button class="mode-switch" title="Switch Theme">
+            <svg
+              class="moon"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <defs></defs>
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Nav-Section -->
       <h1>Hero Section</h1>
       <h1>Hero Section</h1>
       <h1>Hero Section</h1>
@@ -63,8 +62,8 @@
       <h1>Hero Section</h1>
     </div>
     <!-- Hero-Section -->
+    <!-- main-section -->
     <div class="app-container">
-      <!-- main-section -->
       <div class="app-content">
         <!-- Skill-Section -->
         <div class="projects-section">
@@ -1999,13 +1998,53 @@
         </div>
         <!-- project-Section -->
       </div>
-      <!-- main-section -->
-      <!-- footer-Section -->
-      <div class="footer-section">
-        <h1>footer Section</h1>
-      </div>
-      <!-- footer-Section -->
     </div>
+    <!-- main-section -->
+    <!-- footer-Section -->
+    <div class="footer-section">
+      <!--Waves Container-->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(4,228,105,1.5)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="#000" />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="7"
+              fill="rgba(4,255,105,0.5)"
+            />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
+
+      <!--Content starts-->
+      <div class="content">
+        <p>By mstomar698</p>
+      </div>
+      <!--Content ends-->
+    </div>
+    <!-- footer-Section -->
     <!-- Particle JS -->
     <canvas class="background"></canvas>
     <!-- TODO: remove jquery later -->
