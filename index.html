@@ -60,6 +60,42 @@
       <h1>Hero Section</h1>
       <h1>Hero Section</h1>
       <h1>Hero Section</h1>
+      <!-- TODO: Find better svg for hero section to divide to page -->
+      <!--Waves Container-->
+      <div class="hero-waves">
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(4,228,105,1.5)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#fff" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="#000" />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="7"
+              fill="rgba(4,255,105,0.5)"
+            />
+          </g>
+        </svg>
+      </div>
+      <!--Waves end-->
     </div>
     <!-- Hero-Section -->
     <!-- main-section -->
