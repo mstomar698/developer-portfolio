@@ -328,6 +328,134 @@ a {
   margin: 0;
   color: var(--main-color);
 }
+/* experience card */
+.experience-card {
+  display: flex;
+}
+div.card {
+  height: 400px;
+  width: 400px;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 20px;
+  background: #ece9e6;
+  background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6);
+
+  box-shadow: -2px 10px 76px -6px rgba(0, 0, 0, 0.75);
+  margin: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+div.card > p {
+  font-size: 14px;
+  margin: 5px 20px;
+}
+div.profileImg {
+  margin-top: 20px;
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  box-shadow: -2px 10px 76px -20px rgba(0, 0, 0, 0.75);
+}
+div.profileImg.first {
+  background-image: url('https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+div.profileImg.second {
+  background-image: url('https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+div.profileImg.third {
+  background-image: url('https://images.pexels.com/photos/372042/pexels-photo-372042.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+div.card-one {
+  transition-duration: 500ms;
+}
+div.card-two {
+  transition-duration: 500ms;
+}
+div.card-three {
+  transition-duration: 500ms;
+}
+div.card-one:hover {
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+div.card-two:hover {
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+div.card-three:hover {
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+div.card > ul {
+  list-style: none;
+}
+div.card ul li {
+  margin: 20px;
+  transition-duration: 500ms;
+  display: inline-block;
+}
+div.card ul li:hover {
+  transform: scale(1.5);
+}
+div.card ul li a {
+  color: black;
+}
+@media (max-width: 600px) {
+  .experience-card {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+  div.card {
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -2px 10px 76px -6px rgba(0, 0, 0, 0.75);
+    margin: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+  div.card > p {
+    font-size: 7px;
+    margin: 5px 20px;
+  }
+  div.card ul li {
+    margin: 5px;
+    transition-duration: 500ms;
+    display: inline-block;
+  }
+  div.profileImg {
+    margin-top: 20px;
+    border-radius: 100%;
+    width: 75px;
+    height: 75px;
+  }
+  div.card-three {
+    margin-bottom: 100px;
+  }
+}
+/* experience card */
 .view-actions {
   display: flex;
   align-items: center;
