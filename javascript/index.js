@@ -37,46 +37,53 @@ window.onload = function () {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
+  // For Mode Switch
   var modeSwitch = document.querySelector('.mode-switch');
 
   modeSwitch.addEventListener('click', function () {
     document.documentElement.classList.toggle('dark');
     modeSwitch.classList.toggle('active');
   });
-  //  for skill cards
-  // var listView = document.querySelector('.list-view');
-  // var gridView = document.querySelector('.grid-view');
-  // var projectsList = document.querySelector('.project-boxes');
+});
 
-  // listView.addEventListener('click', function () {
-  //   gridView.classList.remove('active');
-  //   listView.classList.add('active');
-  //   projectsList.classList.remove('jsGridView');
-  //   projectsList.classList.add('jsListView');
-  // });
-
-  // gridView.addEventListener('click', function () {
-  //   gridView.classList.add('active');
-  //   listView.classList.remove('active');
-  //   projectsList.classList.remove('jsListView');
-  //   projectsList.classList.add('jsGridView');
-  // });
+document.addEventListener('DOMContentLoaded', function () {
   // for project cards
-  var listView2 = document.querySelector('.list-view2');
-  var gridView2 = document.querySelector('.grid-view2');
+  var projectListView = document.querySelector('.project-list-view');
+  var projectGridView = document.querySelector('.project-grid-view');
   var projectsList = document.querySelector('.project-boxes');
 
-  listView2.addEventListener('click', function () {
-    gridView2.classList.remove('active');
-    listView2.classList.add('active');
+  projectListView.addEventListener('click', function () {
+    projectGridView.classList.remove('active');
+    projectListView.classList.add('active');
     projectsList.classList.remove('jsGridView');
     projectsList.classList.add('jsListView');
   });
 
-  gridView2.addEventListener('click', function () {
-    gridView2.classList.add('active');
-    listView2.classList.remove('active');
+  projectGridView.addEventListener('click', function () {
+    projectGridView.classList.add('active');
+    projectListView.classList.remove('active');
     projectsList.classList.remove('jsListView');
     projectsList.classList.add('jsGridView');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  //  for skill cards
+  var listView = document.querySelector('.list-view');
+  var gridView = document.querySelector('.grid-view');
+  var skillsList = document.querySelector('.skill-boxes');
+
+  listView.addEventListener('click', function () {
+    gridView.classList.remove('active');
+    listView.classList.add('active');
+    skillsList.classList.remove('jsGridView');
+    skillsList.classList.add('jsListView');
+  });
+
+  gridView.addEventListener('click', function () {
+    gridView.classList.add('active');
+    listView.classList.remove('active');
+    skillsList.classList.remove('jsListView');
+    skillsList.classList.add('jsGridView');
   });
 });

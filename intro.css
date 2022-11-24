@@ -63,96 +63,96 @@ a {
   color: var(--main-color);
 }
 /* to change */
-.project-boxes {
+.skill-boxes {
   margin: 0 -8px;
   overflow-y: auto;
 }
-.project-boxes.jsGridView {
+.skill-boxes.jsGridView {
   display: flex;
   flex-wrap: wrap;
 }
-.project-boxes.jsGridView .project-box-wrapper {
+.skill-boxes.jsGridView .skill-box-wrapper {
   width: 33.3%;
 }
-.project-boxes.jsListView .project-box {
+.skill-boxes.jsListView .skill-box {
   display: flex;
   border-radius: 10px;
   position: relative;
 }
-.project-boxes.jsListView .project-box > * {
+.skill-boxes.jsListView .skill-box > * {
   margin-right: 24px;
 }
-.project-boxes.jsListView .more-wrapper {
+.skill-boxes.jsListView .more-wrapper {
   position: absolute;
   right: 16px;
   top: 16px;
 }
-.project-boxes.jsListView .project-box-content-header {
+.skill-boxes.jsListView .skill-box-content-header {
   order: 1;
   max-width: 120px;
 }
-.project-boxes.jsListView .project-box-header {
+.skill-boxes.jsListView .skill-box-header {
   order: 2;
 }
-.project-boxes.jsListView .project-box-footer {
+.skill-boxes.jsListView .skill-box-footer {
   order: 3;
   padding-top: 0;
   flex-direction: column;
   justify-content: flex-start;
 }
-.project-boxes.jsListView .project-box-footer:after {
+.skill-boxes.jsListView .skill-box-footer:after {
   display: none;
 }
-.project-boxes.jsListView .participants {
+.skill-boxes.jsListView .participants {
   margin-bottom: 8px;
 }
-.project-boxes.jsListView .project-box-content-header p {
+.skill-boxes.jsListView .skill-box-content-header p {
   text-align: left;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.project-boxes.jsListView .project-box-header > span {
+.skill-boxes.jsListView .skill-box-header > span {
   position: absolute;
   bottom: 16px;
   left: 16px;
   font-size: 12px;
 }
-.project-boxes.jsListView .box-progress-wrapper {
+.skill-boxes.jsListView .box-progress-wrapper {
   order: 3;
   flex: 1;
 }
-.project-box {
+.skill-box {
   --main-color-card: #dbf6fd;
   border-radius: 30px;
   padding: 16px;
   background-color: var(--main-color-card);
 }
-.project-box-header {
+.skill-box-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
   color: var(--main-color);
 }
-.project-box-header span {
+.skill-box-header span {
   color: #4a4a4a;
   opacity: 0.7;
   font-size: 14px;
   line-height: 16px;
 }
-.project-box-content-header {
+.skill-box-content-header {
   text-align: center;
   margin-bottom: 16px;
 }
-.project-box-content-header p {
+.skill-box-content-header p {
   margin: 0;
 }
-.project-box-wrapper {
+.skill-box-wrapper {
   padding: 8px;
   transition: 0.2s;
 }
-.project-btn-more {
+.skill-btn-more {
   padding: 0;
   height: 14px;
   width: 24px;
@@ -162,9 +162,7 @@ a {
   border: none;
   flex-shrink: 0;
 }
-.more-wrapper {
-  position: relative;
-}
+
 .box-content-header {
   font-size: 16px;
   line-height: 24px;
@@ -202,13 +200,13 @@ a {
   font-weight: 700;
   line-height: 16px;
 }
-.project-box-footer {
+.skill-box-footer {
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
   position: relative;
 }
-.project-box-footer:after {
+.skill-box-footer:after {
   content: '';
   position: absolute;
   background-color: rgba(255, 255, 255, 0.6);
@@ -256,19 +254,8 @@ a {
 }
 
 @media screen and (max-width: 980px) {
-  .project-boxes.jsGridView .project-box-wrapper {
+  .skill-boxes.jsGridView .skill-box-wrapper {
     width: 50%;
-  }
-  .status-number,
-  .status-type {
-    font-size: 14px;
-  }
-  .status-type:after {
-    width: 4px;
-    height: 4px;
-  }
-  .item-status {
-    margin-right: 0;
   }
 }
 
@@ -297,7 +284,7 @@ a {
   .projects-section {
     overflow: auto;
   }
-  .project-boxes {
+  .skill-boxes {
     overflow-y: visible;
   }
   .app-sidebar,
@@ -307,10 +294,7 @@ a {
   .app-content {
     padding: 16px 12px 24px 12px;
   }
-  .status-number,
-  .status-type {
-    font-size: 10px;
-  }
+
   .view-btn {
     width: 24px;
     height: 24px;
@@ -318,10 +302,8 @@ a {
   .app-header {
     padding: 16px 10px;
   }
-  .search-input {
-    max-width: 120px;
-  }
-  .project-boxes.jsGridView .project-box-wrapper {
+
+  .skill-boxes.jsGridView .skill-box-wrapper {
     width: 100%;
   }
   .projects-section {
@@ -338,15 +320,6 @@ a {
   .projects-section-header .time {
     font-size: 18px;
   }
-  .status-type {
-    padding-right: 4px;
-  }
-  .status-type:after {
-    display: none;
-  }
-  .search-input {
-    font-size: 14px;
-  }
 
   .box-content-header {
     font-size: 12px;
@@ -356,7 +329,7 @@ a {
     font-size: 12px;
     line-height: 16px;
   }
-  .project-boxes.jsListView .project-box-header > span {
+  .skill-boxes.jsListView .skill-box-header > span {
     font-size: 10px;
   }
   .box-progress-header {
@@ -365,15 +338,10 @@ a {
   .box-progress-percentage {
     font-size: 10px;
   }
-  .days-left {
-    font-size: 8px;
-    padding: 6px 6px;
-    text-align: center;
-  }
-  .project-boxes.jsListView .project-box > * {
+  .skill-boxes.jsListView .skill-box > * {
     margin-right: 10px;
   }
-  .project-boxes.jsListView .more-wrapper {
+  .skill-boxes.jsListView .more-wrapper {
     right: 2px;
     top: 10px;
   }
