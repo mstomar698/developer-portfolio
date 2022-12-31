@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- meta data -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta data -->
+    <!-- Primary Meta Tags -->
+    <title>mstomar | developer-portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <meta name="title" content="mstomar | developer-portfolio" />
+    <meta
+      name="description"
+      content="This is a personal portfolio template created by Mayank Singh Tomar (mstomar) using HTML, CSS, and JS."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>temp</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="mstomar | developer-portfolio" />
+    <meta
+      property="og:description"
+      content="This is a personal portfolio template created by Mayank Singh Tomar (mstomar) using HTML, CSS, and JS."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="mstomar | developer-portfolio" />
+    <meta
+      property="twitter:description"
+      content="This is a personal portfolio template created by Mayank Singh Tomar (mstomar) using HTML, CSS, and JS."
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
     <!-- Styles -->
     <link
       rel="stylesheet"
@@ -21,46 +53,116 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
+    <!-- tsParticle JS -->
+    <canvas id="tsparticles"></canvas>
+    <!-- ts  Particle JS -->
     <!-- Hero-Section -->
-    <div class="hero-section">
+    <section class="hero-section" id="hero">
       <!-- Nav-Section -->
-      <div class="app-header">
-        <div class="app-header-left">
-          <p class="app-name">MAYANK SINGH TOMAR</p>
-        </div>
-        <div class="app-header-right">
-          <button class="mode-switch" title="Switch Theme">
-            <svg
-              class="moon"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <defs></defs>
-              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
-            </svg>
-          </button>
+      <header class="app-header" id="header">
+        <nav>
+          <div class="container">
+            <div class="app-header-left">
+              <div class="logo">
+                <img src="./assets/logos/B-rem.png" alt="Logo" />
+              </div>
+              <p class="app-name">MAYANK SINGH TOMAR</p>
+            </div>
+
+            <div class="links fire">
+              <ul>
+                <li>
+                  <a href="#header">Home</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+                <li>
+                  <a href="#skills">Skills</a>
+                </li>
+                <li>
+                  <a href="#projects">Projects</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact Me</a>
+                </li>
+                <li class="nav-btn">
+                  <button class="mode-switch" title="Switch Theme">
+                    <svg
+                      class="moon"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <defs></defs>
+                      <path
+                        d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"
+                      ></path>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="header-content">
+        <div class="container grid-2">
+          <div class="column-1">
+            <p class="title-header fire">
+              Hello <span class="neon">👋</span>,<br />
+              I'm <br />
+              <span class="neon">Mayank Singh Tomar</span>
+            </p>
+
+            <div class="subtitle-header golden">
+              <p>A full-stack developer from India</p>
+            </div>
+            <div class="description-header gradient">
+              <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old.
+              </p>
+            </div>
+            <div class="icon-stash">
+              <a class="stash-icon fire" href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a class="stash-icon fire" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a class="stash-icon fire" href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="stash-icon fire" href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a class="stash-icon fire" href="#">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column-2 image">
+            <img
+              src="./assets/home.png"
+              class="img-element about-image"
+              alt="main logo rawquesh"
+            />
+          </div>
         </div>
       </div>
       <!-- Nav-Section -->
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <h1>Hero Section</h1>
-      <!-- TODO: Find better svg for hero section to divide to page -->
       <!--Waves Container-->
       <div class="hero-waves">
         <svg
@@ -96,820 +198,796 @@
         </svg>
       </div>
       <!--Waves end-->
-    </div>
+    </section>
     <!-- Hero-Section -->
     <!-- main-section -->
-    <div class="app-container">
+    <div class="app-container" id="main">
       <div class="app-content">
+        <!-- About-Me-Section -->
+        <section class="skills-section" id="about">
+          <div class="box-header">
+            <div class="skills-section-line">
+              <div class="abouMeTitle">
+                <div class="neon">About Me</div>
+              </div>
+            </div>
+            <svg
+              class="wave-svg"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 1920 100"
+            >
+              <path
+                id="foo"
+                class="cls-1"
+                d="M280.15,24.83c134.57-65.51,148.62,89,359.56,6.79,105.08-41,120,68.3,280.71-6.29C934.8,18.66,948,16.3,960,16.5c12-.2,25.2,2.16,39.58,8.83,160.69,74.59,175.63-34.67,280.71,6.29,210.94,82.22,225-72.3,359.56-6.79,162.33,79,185.33-9.63,280.15-13.09V0H0V11.74C94.82,15.2,117.82,103.86,280.15,24.83Z"
+              ></path>
+            </svg>
+          </div>
+          <section class="about section">
+            <div class="container">
+              <div class="section-body grid-2">
+                <div class="column-1">
+                  <h3 class="text">
+                    Hello,<br />
+                    I'm &nbsp Mayank Singh Tomar a passionate
+                    <span class="stitched">full-stack developer</span>
+                  </h3>
+                  <p class="text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <p class="text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <p class="text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+                  <p class="text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
+
+                  <!-- <div class="cv-btn">
+                    <a href="mailto:tomarm698@gmail.com" class="btn"
+                      > <i class="fa-light fa-arrow-down fire"></i> &nbsp DownLoad CV</a
+                    >
+                  </div> -->
+                  <div class="cv-btn">
+                    <a href="mailto:tomarm698@gmail.com" class="btn">
+                      <i class="fa-solid fa-download fire"></i> &nbsp DownLoad
+                      CV</a
+                    >
+                  </div>
+                </div>
+
+                <div class="column-2 image">
+                  <img src="./assets/abt-2.png" class="z-index" alt="" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- About-Me-Section -->
         <!-- Skill-Section -->
-        <div class="skills-section">
-          <div class="skills-section-line">
-            <p>Skills</p>
-            <div class="view-actions">
-              <button class="view-btn list-view" title="List View">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-list"
-                >
-                  <line x1="8" y1="6" x2="21" y2="6" />
-                  <line x1="8" y1="12" x2="21" y2="12" />
-                  <line x1="8" y1="18" x2="21" y2="18" />
-                  <line x1="3" y1="6" x2="3.01" y2="6" />
-                  <line x1="3" y1="12" x2="3.01" y2="12" />
-                  <line x1="3" y1="18" x2="3.01" y2="18" />
-                </svg>
-              </button>
-              <button class="view-btn grid-view active" title="Grid View">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-grid"
-                >
-                  <rect x="3" y="3" width="7" height="7" />
-                  <rect x="14" y="3" width="7" height="7" />
-                  <rect x="14" y="14" width="7" height="7" />
-                  <rect x="3" y="14" width="7" height="7" />
-                </svg>
-              </button>
+        <section class="skills-section" id="skills">
+          <div class="box-header">
+            <div class="skills-section-line">
+              <div class="abouMeTitle">
+                <div class="neon">Skills</div>
+              </div>
+              <section class="view-actions">
+                <button class="view-btn list-view" title="List View">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-list"
+                  >
+                    <line x1="8" y1="6" x2="21" y2="6" />
+                    <line x1="8" y1="12" x2="21" y2="12" />
+                    <line x1="8" y1="18" x2="21" y2="18" />
+                    <line x1="3" y1="6" x2="3.01" y2="6" />
+                    <line x1="3" y1="12" x2="3.01" y2="12" />
+                    <line x1="3" y1="18" x2="3.01" y2="18" />
+                  </svg>
+                </button>
+                <button class="view-btn grid-view active" title="Grid View">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-grid"
+                  >
+                    <rect x="3" y="3" width="7" height="7" />
+                    <rect x="14" y="3" width="7" height="7" />
+                    <rect x="14" y="14" width="7" height="7" />
+                    <rect x="3" y="14" width="7" height="7" />
+                  </svg>
+                </button>
+              </section>
+            </div>
+            <svg
+              class="wave-svg"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 1920 100"
+            >
+              <path
+                id="foo"
+                class="cls-1"
+                d="M280.15,24.83c134.57-65.51,148.62,89,359.56,6.79,105.08-41,120,68.3,280.71-6.29C934.8,18.66,948,16.3,960,16.5c12-.2,25.2,2.16,39.58,8.83,160.69,74.59,175.63-34.67,280.71,6.29,210.94,82.22,225-72.3,359.56-6.79,162.33,79,185.33-9.63,280.15-13.09V0H0V11.74C94.82,15.2,117.82,103.86,280.15,24.83Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="box-content">
+            <div class="skill-boxes jsGridView">
+              <!-- skill-1 -->
+              <div class="skill-box-wrapper">
+                <div class="skill-box" style="background-color: #fee4cb">
+                  <div class="skill-box-header"></div>
+                  <div class="skill-box-content-header">
+                    <p class="box-content-header">Web Designing</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Proficiency</p>
+                    <div class="box-progress-bar">
+                      <span
+                        class="box-progress"
+                        style="width: 60%; background-color: #ff942e"
+                      ></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="skill-box-footer"></div>
+                </div>
+              </div>
+              <!-- Skill-2 -->
+              <div class="skill-box-wrapper">
+                <div class="skill-box" style="background-color: #e9e7fd">
+                  <div class="skill-box-header"></div>
+                  <div class="skill-box-content-header">
+                    <p class="box-content-header">Testing</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Proficiency</p>
+                    <div class="box-progress-bar">
+                      <span
+                        class="box-progress"
+                        style="width: 50%; background-color: #4f3ff0"
+                      ></span>
+                    </div>
+                    <p class="box-progress-percentage">50%</p>
+                  </div>
+                  <div class="skill-box-footer"></div>
+                </div>
+              </div>
+              <!-- Skill-3 -->
+              <div class="skill-box-wrapper">
+                <div class="skill-box">
+                  <div class="skill-box-header"></div>
+                  <div class="skill-box-content-header">
+                    <p class="box-content-header">Svg Animations</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Proficiency</p>
+                    <div class="box-progress-bar">
+                      <span
+                        class="box-progress"
+                        style="width: 80%; background-color: #096c86"
+                      ></span>
+                    </div>
+                    <p class="box-progress-percentage">80%</p>
+                  </div>
+                  <div class="skill-box-footer"></div>
+                </div>
+              </div>
+              <!-- Skill-4 -->
+              <div class="skill-box-wrapper">
+                <div class="skill-box" style="background-color: #ffd3e2">
+                  <div class="skill-box-header"></div>
+                  <div class="skill-box-content-header">
+                    <p class="box-content-header">UI Development</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Proficiency</p>
+                    <div class="box-progress-bar">
+                      <span
+                        class="box-progress"
+                        style="width: 20%; background-color: #df3670"
+                      ></span>
+                    </div>
+                    <p class="box-progress-percentage">20%</p>
+                  </div>
+                  <div class="skill-box-footer"></div>
+                </div>
+              </div>
+              <!-- Skill-5 -->
+              <div class="skill-box-wrapper">
+                <div class="skill-box" style="background-color: #c8f7dc">
+                  <div class="skill-box-header"></div>
+                  <div class="skill-box-content-header">
+                    <p class="box-content-header">Data Analysis</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Proficiency</p>
+                    <div class="box-progress-bar">
+                      <span
+                        class="box-progress"
+                        style="width: 60%; background-color: #34c471"
+                      ></span>
+                    </div>
+                    <p class="box-progress-percentage">60%</p>
+                  </div>
+                  <div class="skill-box-footer"></div>
+                </div>
+              </div>
+              <!-- Skill-6 -->
+              <div class="skill-box-wrapper">
+                <div class="skill-box" style="background-color: #d5deff">
+                  <div class="skill-box-header"></div>
+                  <div class="skill-box-content-header">
+                    <p class="box-content-header">Web Designing</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
+                  </div>
+                  <div class="box-progress-wrapper">
+                    <p class="box-progress-header">Proficiency</p>
+                    <div class="box-progress-bar">
+                      <span
+                        class="box-progress"
+                        style="width: 40%; background-color: #4067f9"
+                      ></span>
+                    </div>
+                    <p class="box-progress-percentage">40%</p>
+                  </div>
+                  <div class="skill-box-footer"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="skill-boxes jsGridView">
-            <!-- skill-1 -->
-            <div class="skill-box-wrapper">
-              <div class="skill-box" style="background-color: #fee4cb">
-                <div class="skill-box-header"></div>
-                <div class="skill-box-content-header">
-                  <p class="box-content-header">Web Designing</p>
-                  <p class="box-content-subheader">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Proficiency</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 60%; background-color: #ff942e"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">60%</p>
-                </div>
-                <div class="skill-box-footer"></div>
-              </div>
-            </div>
-            <!-- Skill-2 -->
-            <div class="skill-box-wrapper">
-              <div class="skill-box" style="background-color: #e9e7fd">
-                <div class="skill-box-header"></div>
-                <div class="skill-box-content-header">
-                  <p class="box-content-header">Testing</p>
-                  <p class="box-content-subheader">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Proficiency</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 50%; background-color: #4f3ff0"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">50%</p>
-                </div>
-                <div class="skill-box-footer"></div>
-              </div>
-            </div>
-            <!-- Skill-3 -->
-            <div class="skill-box-wrapper">
-              <div class="skill-box">
-                <div class="skill-box-header"></div>
-                <div class="skill-box-content-header">
-                  <p class="box-content-header">Svg Animations</p>
-                  <p class="box-content-subheader">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Proficiency</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 80%; background-color: #096c86"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">80%</p>
-                </div>
-                <div class="skill-box-footer"></div>
-              </div>
-            </div>
-            <!-- Skill-4 -->
-            <div class="skill-box-wrapper">
-              <div class="skill-box" style="background-color: #ffd3e2">
-                <div class="skill-box-header"></div>
-                <div class="skill-box-content-header">
-                  <p class="box-content-header">UI Development</p>
-                  <p class="box-content-subheader">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Proficiency</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 20%; background-color: #df3670"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">20%</p>
-                </div>
-                <div class="skill-box-footer"></div>
-              </div>
-            </div>
-            <!-- Skill-5 -->
-            <div class="skill-box-wrapper">
-              <div class="skill-box" style="background-color: #c8f7dc">
-                <div class="skill-box-header"></div>
-                <div class="skill-box-content-header">
-                  <p class="box-content-header">Data Analysis</p>
-                  <p class="box-content-subheader">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Proficiency</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 60%; background-color: #34c471"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">60%</p>
-                </div>
-                <div class="skill-box-footer"></div>
-              </div>
-            </div>
-            <!-- Skill-6 -->
-            <div class="skill-box-wrapper">
-              <div class="skill-box" style="background-color: #d5deff">
-                <div class="skill-box-header"></div>
-                <div class="skill-box-content-header">
-                  <p class="box-content-header">Web Designing</p>
-                  <p class="box-content-subheader">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book.
-                  </p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Proficiency</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 40%; background-color: #4067f9"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">40%</p>
-                </div>
-                <div class="skill-box-footer"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
         <!-- Skill-Section -->
-        <!-- education-Section -->
-        <div class="education-section">
-          <div class="education-section-line">
-            <p>Education</p>
-          </div>
-          <div class="education-card">
-            <div class="ed-card ed-card-one">
-              <div class="clgImg first"><p>College Name</p></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                expedita sint perspiciatis iure, dolor id laudantium facere
-                eaque vitae aliquam distinctio repudiandae, harum, impedit
-                laboriosam. Officia molestias aliquam facilis earum!
-              </p>
-              <ul>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-stack-overflow"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="ed-card ed-card-two">
-              <div class="clgImg second"><p>College Name</p></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                expedita sint perspiciatis iure, dolor id laudantium facere
-                eaque vitae aliquam distinctio repudiandae, harum, impedit
-                laboriosam. Officia molestias aliquam facilis earum!
-              </p>
-              <ul>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-stack-overflow"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- education-Section -->
-        <!-- experience-Section -->
-        <div class="experience-section">
-          <div class="experience-section-line">
-            <p>Experience</p>
-          </div>
-          <div class="experience-card">
-            <div class="card card-one">
-              <div class="profileImg first"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                expedita sint perspiciatis iure, dolor id laudantium facere
-                eaque vitae aliquam distinctio repudiandae, harum, impedit
-                laboriosam. Officia molestias aliquam facilis earum!
-              </p>
-              <ul>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-stack-overflow"></i></a>
-                </li>
-              </ul>
-            </div>
-            <div class="card card-two">
-              <div class="profileImg second"></div>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad
-                expedita sint perspiciatis iure, dolor id laudantium facere
-                eaque vitae aliquam distinctio repudiandae, harum, impedit
-                laboriosam. Officia molestias aliquam facilis earum!
-              </p>
-              <ul>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-github"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-stack-overflow"></i></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- experience-Section -->
         <!-- projects-Section -->
-        <div class="projects-section">
-          <div class="projects-section-line">
-            <p>Projects</p>
-            <div class="view-actions">
-              <button
-                class="view-btn project-list-view"
-                title="Project List View"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-list"
+        <section class="skills-section" id="projects">
+          <div class="box-header">
+            <div class="skills-section-line">
+              <div class="abouMeTitle">
+                <div class="neon">Projects</div>
+              </div>
+              <section class="view-actions">
+                <button
+                  class="view-btn project-list-view"
+                  title="Project List View"
                 >
-                  <line x1="8" y1="6" x2="21" y2="6" />
-                  <line x1="8" y1="12" x2="21" y2="12" />
-                  <line x1="8" y1="18" x2="21" y2="18" />
-                  <line x1="3" y1="6" x2="3.01" y2="6" />
-                  <line x1="3" y1="12" x2="3.01" y2="12" />
-                  <line x1="3" y1="18" x2="3.01" y2="18" />
-                </svg>
-              </button>
-              <button
-                class="view-btn project-grid-view active"
-                title="Project Grid View"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-grid"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-list"
+                  >
+                    <line x1="8" y1="6" x2="21" y2="6" />
+                    <line x1="8" y1="12" x2="21" y2="12" />
+                    <line x1="8" y1="18" x2="21" y2="18" />
+                    <line x1="3" y1="6" x2="3.01" y2="6" />
+                    <line x1="3" y1="12" x2="3.01" y2="12" />
+                    <line x1="3" y1="18" x2="3.01" y2="18" />
+                  </svg>
+                </button>
+                <button
+                  class="view-btn project-grid-view active"
+                  title="Project Grid View"
                 >
-                  <rect x="3" y="3" width="7" height="7" />
-                  <rect x="14" y="3" width="7" height="7" />
-                  <rect x="14" y="14" width="7" height="7" />
-                  <rect x="3" y="14" width="7" height="7" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-grid"
+                  >
+                    <rect x="3" y="3" width="7" height="7" />
+                    <rect x="14" y="3" width="7" height="7" />
+                    <rect x="14" y="14" width="7" height="7" />
+                    <rect x="3" y="14" width="7" height="7" />
+                  </svg>
+                </button>
+              </section>
             </div>
+            <svg
+              class="wave-svg"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 1920 100"
+            >
+              <path
+                id="foo"
+                class="cls-1"
+                d="M280.15,24.83c134.57-65.51,148.62,89,359.56,6.79,105.08-41,120,68.3,280.71-6.29C934.8,18.66,948,16.3,960,16.5c12-.2,25.2,2.16,39.58,8.83,160.69,74.59,175.63-34.67,280.71,6.29,210.94,82.22,225-72.3,359.56-6.79,162.33,79,185.33-9.63,280.15-13.09V0H0V11.74C94.82,15.2,117.82,103.86,280.15,24.83Z"
+              ></path>
+            </svg>
           </div>
-          <div class="project-boxes jsGridView">
-            <div class="project-box-wrapper">
-              <div class="project-box" style="background-color: #fee4cb">
-                <div class="project-box-header">
-                  <span>December 10, 2020</span>
-                  <div class="more-wrapper">
-                    <button class="project-btn-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-more-vertical"
-                      >
-                        <circle cx="12" cy="12" r="1" />
-                        <circle cx="12" cy="5" r="1" />
-                        <circle cx="12" cy="19" r="1" />
-                      </svg>
-                    </button>
+
+          <div class="box-content">
+            <div class="project-boxes jsGridView">
+              <!-- project-1 -->
+              <div class="project-box-wrapper">
+                <div class="project-box" style="background-color: #fee4cb">
+                  <div class="project-box-content-header">
+                    <p class="box-content-header">Projetct-1</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
-                </div>
-                <div class="project-box-content-header">
-                  <p class="box-content-header">Web Designing</p>
-                  <p class="box-content-subheader">Prototyping</p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Progress</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 60%; background-color: #ff942e"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">60%</p>
-                </div>
-                <div class="project-box-footer">
-                  <div class="participants">
-                    <img
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                      alt="participant"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-                      alt="participant"
-                    />
-                    <button class="add-participant" style="color: #ff942e">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-plus"
-                      >
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="days-left" style="color: #ff942e">
-                    2 Days Left
+                  <div class="project-box-footer">
+                    <div class="participants">
+                      <a href="https://github.com/mstomar698">
+                        <button class="add-participant" style="color: #ff942e">
+                          <svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="#333"
+                              fill-rule="evenodd"
+                              d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                    <a href="https://github.com/mstomar698">
+                      <div class="days-left neon" style="color: #ff942e">
+                        Demo
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project-box-wrapper">
-              <div class="project-box" style="background-color: #e9e7fd">
-                <div class="project-box-header">
-                  <span>December 10, 2020</span>
-                  <div class="more-wrapper">
-                    <button class="project-btn-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-more-vertical"
-                      >
-                        <circle cx="12" cy="12" r="1" />
-                        <circle cx="12" cy="5" r="1" />
-                        <circle cx="12" cy="19" r="1" />
-                      </svg>
-                    </button>
+              <!-- project-2 -->
+              <div class="project-box-wrapper">
+                <div class="project-box" style="background-color: #e9e7fd">
+                  <div class="project-box-content-header">
+                    <p class="box-content-header">Projetct-2</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
-                </div>
-                <div class="project-box-content-header">
-                  <p class="box-content-header">Testing</p>
-                  <p class="box-content-subheader">Prototyping</p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Progress</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 50%; background-color: #4f3ff0"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">50%</p>
-                </div>
-                <div class="project-box-footer">
-                  <div class="participants">
-                    <img
-                      src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80"
-                      alt="participant"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80"
-                      alt="participant"
-                    />
-                    <button class="add-participant" style="color: #4f3ff0">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-plus"
-                      >
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="days-left" style="color: #4f3ff0">
-                    2 Days Left
+                  <div class="project-box-footer">
+                    <div class="participants">
+                      <a href="https://github.com/mstomar698">
+                        <button class="add-participant" style="color: #4f3ff0">
+                          <svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="#333"
+                              fill-rule="evenodd"
+                              d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                    <a href="https://github.com/mstomar698">
+                      <div class="days-left neon" style="color: #4f3ff0">
+                        Demo
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project-box-wrapper">
-              <div class="project-box">
-                <div class="project-box-header">
-                  <span>December 10, 2020</span>
-                  <div class="more-wrapper">
-                    <button class="project-btn-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-more-vertical"
-                      >
-                        <circle cx="12" cy="12" r="1" />
-                        <circle cx="12" cy="5" r="1" />
-                        <circle cx="12" cy="19" r="1" />
-                      </svg>
-                    </button>
+              <!-- project-3 -->
+              <div class="project-box-wrapper">
+                <div class="project-box" style="background-color: #e9e7fd">
+                  <div class="project-box-content-header">
+                    <p class="box-content-header">Projetct-3</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
-                </div>
-                <div class="project-box-content-header">
-                  <p class="box-content-header">Svg Animations</p>
-                  <p class="box-content-subheader">Prototyping</p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Progress</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 80%; background-color: #096c86"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">80%</p>
-                </div>
-                <div class="project-box-footer">
-                  <div class="participants">
-                    <img
-                      src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-                      alt="participant"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1596815064285-45ed8a9c0463?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1215&q=80"
-                      alt="participant"
-                    />
-                    <button class="add-participant" style="color: #096c86">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-plus"
-                      >
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="days-left" style="color: #096c86">
-                    2 Days Left
+                  <div class="project-box-footer">
+                    <div class="participants">
+                      <a href="https://github.com/mstomar698">
+                        <button class="add-participant" style="color: #096c86">
+                          <svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="#333"
+                              fill-rule="evenodd"
+                              d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                    <a href="https://github.com/mstomar698">
+                      <div class="days-left neon" style="color: #096c86">
+                        Demo
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project-box-wrapper">
-              <div class="project-box" style="background-color: #ffd3e2">
-                <div class="project-box-header">
-                  <span>December 10, 2020</span>
-                  <div class="more-wrapper">
-                    <button class="project-btn-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-more-vertical"
-                      >
-                        <circle cx="12" cy="12" r="1" />
-                        <circle cx="12" cy="5" r="1" />
-                        <circle cx="12" cy="19" r="1" />
-                      </svg>
-                    </button>
+              <!-- project-4 -->
+              <div class="project-box-wrapper">
+                <div class="project-box" style="background-color: #ffd3e2">
+                  <div class="project-box-content-header">
+                    <p class="box-content-header">Projetct-4</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
-                </div>
-                <div class="project-box-content-header">
-                  <p class="box-content-header">UI Development</p>
-                  <p class="box-content-subheader">Prototyping</p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Progress</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 20%; background-color: #df3670"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">20%</p>
-                </div>
-                <div class="project-box-footer">
-                  <div class="participants">
-                    <img
-                      src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                      alt="participant"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1587628604439-3b9a0aa7a163?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-                      alt="participant"
-                    />
-                    <button class="add-participant" style="color: #df3670">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-plus"
-                      >
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="days-left" style="color: #df3670">
-                    2 Days Left
+                  <div class="project-box-footer">
+                    <div class="participants">
+                      <a href="https://github.com/mstomar698">
+                        <button class="add-participant" style="color: #df3670">
+                          <svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="#333"
+                              fill-rule="evenodd"
+                              d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                    <a href="https://github.com/mstomar698">
+                      <div class="days-left neon" style="color: #df3670">
+                        Demo
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project-box-wrapper">
-              <div class="project-box" style="background-color: #c8f7dc">
-                <div class="project-box-header">
-                  <span>December 10, 2020</span>
-                  <div class="more-wrapper">
-                    <button class="project-btn-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-more-vertical"
-                      >
-                        <circle cx="12" cy="12" r="1" />
-                        <circle cx="12" cy="5" r="1" />
-                        <circle cx="12" cy="19" r="1" />
-                      </svg>
-                    </button>
+              <!-- project-5 -->
+              <div class="project-box-wrapper">
+                <div class="project-box" style="background-color: #c8f7dc">
+                  <div class="project-box-content-header">
+                    <p class="box-content-header">Projetct-5</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
-                </div>
-                <div class="project-box-content-header">
-                  <p class="box-content-header">Data Analysis</p>
-                  <p class="box-content-subheader">Prototyping</p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Progress</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 60%; background-color: #34c471"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">60%</p>
-                </div>
-                <div class="project-box-footer">
-                  <div class="participants">
-                    <img
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                      alt="participant"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60"
-                      alt="participant"
-                    />
-                    <button class="add-participant" style="color: #34c471">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-plus"
-                      >
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="days-left" style="color: #34c471">
-                    2 Days Left
+                  <div class="project-box-footer">
+                    <div class="participants">
+                      <a href="https://github.com/mstomar698">
+                        <button class="add-participant" style="color: #34c471">
+                          <svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="#333"
+                              fill-rule="evenodd"
+                              d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                    <a href="https://github.com/mstomar698">
+                      <div class="days-left neon" style="color: #34c471">
+                        Demo
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="project-box-wrapper">
-              <div class="project-box" style="background-color: #d5deff">
-                <div class="project-box-header">
-                  <span>December 10, 2020</span>
-                  <div class="more-wrapper">
-                    <button class="project-btn-more">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-more-vertical"
-                      >
-                        <circle cx="12" cy="12" r="1" />
-                        <circle cx="12" cy="5" r="1" />
-                        <circle cx="12" cy="19" r="1" />
-                      </svg>
-                    </button>
+              <!-- project-6 -->
+              <div class="project-box-wrapper">
+                <div class="project-box" style="background-color: #d5deff">
+                  <div class="project-box-content-header">
+                    <p class="box-content-header">Projetct-6</p>
+                    <p class="box-content-subheader">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book.
+                    </p>
                   </div>
-                </div>
-                <div class="project-box-content-header">
-                  <p class="box-content-header">Web Designing</p>
-                  <p class="box-content-subheader">Prototyping</p>
-                </div>
-                <div class="box-progress-wrapper">
-                  <p class="box-progress-header">Progress</p>
-                  <div class="box-progress-bar">
-                    <span
-                      class="box-progress"
-                      style="width: 40%; background-color: #4067f9"
-                    ></span>
-                  </div>
-                  <p class="box-progress-percentage">40%</p>
-                </div>
-                <div class="project-box-footer">
-                  <div class="participants">
-                    <img
-                      src="https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80"
-                      alt="participant"
-                    />
-                    <img
-                      src="https://images.unsplash.com/photo-1583195764036-6dc248ac07d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2555&q=80"
-                      alt="participant"
-                    />
-                    <button class="add-participant" style="color: #4067f9">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="12"
-                        height="12"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="3"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        class="feather feather-plus"
-                      >
-                        <path d="M12 5v14M5 12h14" />
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="days-left" style="color: #4067f9">
-                    2 Days Left
+                  <div class="project-box-footer">
+                    <div class="participants">
+                      <a href="https://github.com/mstomar698">
+                        <button class="add-participant" style="color: #4067f9">
+                          <svg
+                            width="24px"
+                            height="24px"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill="#333"
+                              fill-rule="evenodd"
+                              d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"
+                            />
+                          </svg>
+                        </button>
+                      </a>
+                    </div>
+                    <a href="https://github.com/mstomar698">
+                      <div class="days-left neon" style="color: #4067f9">
+                        Demo
+                      </div></a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <!-- projects-Section -->
       </div>
     </div>
     <!-- main-section -->
+    <!-- Contact-Me-Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <div class="contact-info">
+            <h3 class="title fire">Get in touch</h3>
+            <p class="contact-text">
+              Drop me a message anytime, and I will reach you out.
+            </p>
+            <div class="information-wrap">
+              <div class="information">
+                <div class="contact-icon fire">
+                  <i class="fa-brands fa-twitter"></i>
+                </div>
+                <a href="#" class="info-text">Twitter</a>
+              </div>
+              <div class="information">
+                <div class="contact-icon fire">
+                  <i class="fa-brands fa-linkedin"></i>
+                </div>
+                <a href="#" class="info-text">LinkedIn</a>
+              </div>
+              <div class="information">
+                <div class="contact-icon fire">
+                  <i class="fa-brands fa-instagram"></i>
+                </div>
+                <a href="#" class="info-text">Instagram</a>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon fire">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <a
+                  href="https://www.google.com/maps/place/Gwalior,+Madhya+Pradesh/@26.2141324,78.1084974,12z/data=!3m1!4b1!4m5!3m4!1s0x3976c5d1792291fb:0xff4fb56d65bc3adf!8m2!3d26.2124007!4d78.1772053"
+                  class="info-text"
+                  >Gwalior, India</a
+                >
+              </div>
+
+              <div class="information">
+                <div class="contact-icon fire">
+                  <!-- <i class="fas fa-phone-alt"></i> -->
+                </div>
+                <!-- <p class="info-text">+91 626-518-7023</p> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form form action="https://formsubmit.co/el/parisi" method="POST">
+              <!-- action="https://formsubmit.co/fbe30d8ad08199aa18d939301659dec5 " -->
+              <h3 class="title fire">Contact me</h3>
+              <div class="row">
+                <input type="hidden" name="_template" value="table" />
+                <input type="hidden" name="_subject" value="Contact" />
+
+                <input
+                  class="contact-input"
+                  placeholder="First Name"
+                  type="text"
+                  name="fname"
+                  required
+                />
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Last Name"
+                  name="lname"
+                  required
+                />
+              </div>
+
+              <div class="row">
+                <input
+                  type="text"
+                  class="contact-input"
+                  placeholder="Phone"
+                  name="phone"
+                  required
+                />
+                <input
+                  type="email"
+                  class="contact-input"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <div class="row">
+                <textarea
+                  class="contact-input textarea"
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <div class="cv-btn">
+                <button type="submit" class="btn">
+                  <i class="fas fa-paper-plane fire"></i> &nbspSend
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact-Me-Section -->
+    <!-- Hire-Me-Section -->
+    <div class="app-container" id="mailme">
+      <div class="app-content">
+        <section class="skills-section" id="hireme">
+          <div class="box-header">
+            <div class="skills-section-line">
+              <div class="abouMeTitle">
+                <div class="neon">Let's talk about a project</div>
+              </div>
+            </div>
+            <svg
+              class="wave-svg"
+              version="1.1"
+              x="0px"
+              y="0px"
+              viewBox="0 0 1920 100"
+            >
+              <path
+                id="foo"
+                class="cls-1"
+                d="M280.15,24.83c134.57-65.51,148.62,89,359.56,6.79,105.08-41,120,68.3,280.71-6.29C934.8,18.66,948,16.3,960,16.5c12-.2,25.2,2.16,39.58,8.83,160.69,74.59,175.63-34.67,280.71,6.29,210.94,82.22,225-72.3,359.56-6.79,162.33,79,185.33-9.63,280.15-13.09V0H0V11.74C94.82,15.2,117.82,103.86,280.15,24.83Z"
+              ></path>
+            </svg>
+          </div>
+          <section class="hireme">
+            <div class="hireme-container">
+              <p class="text">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour, or randomised words which don't look even
+                slightly believable. If you are going to use a passage of Lorem
+                Ipsum, you need to be sure there isn't anything embarrassing
+                hidden in the middle of text.
+              </p>
+              <div class="cv-btn">
+                <a href="mailto:tomarm698@gmail.com" class="btn">
+                  <i class="fa-solid fa-envelope fire"></i> &nbsp Let's Chat</a
+                >
+              </div>
+            </div>
+          </section>
+        </section>
+      </div>
+    </div>
+    <!-- Hire-Me-Section -->
     <!-- footer-Section -->
-    <div class="footer-section">
+    <section class="footer-section" id="footer">
       <!--Waves Container-->
       <div>
         <svg
-          class="waves"
+          class="footer-waves"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           viewBox="0 24 150 28"
@@ -941,19 +1019,23 @@
         </svg>
       </div>
       <!--Waves end-->
-
       <!--Content starts-->
-      <div class="content">
-        <p>By mstomar698</p>
+      <div class="footer-content">
+        <p>Made With ❤️ By <a href="#" class="fire">mstomar</a></p>
+        <span> Copyright©2022 All rights reserved. </span>
       </div>
       <!--Content ends-->
-    </div>
+    </section>
     <!-- footer-Section -->
     <!-- Particle JS -->
-    <canvas class="background"></canvas>
-    <!-- TODO: remove jquery later -->
+    <!-- <canvas class="background"></canvas> -->
+    <!-- Particle JS -->
     <script src="./javascript/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://npmcdn.com/particlesjs@2.0.2/dist/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.33.3/tsparticles.min.js"></script>
   </body>
 </html>

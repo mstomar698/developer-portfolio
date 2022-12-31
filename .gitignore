@@ -1,2 +1,6 @@
 dummy.**
 dump.**
+dump/**
+/dump
+/dump/**
+.vscode/**
