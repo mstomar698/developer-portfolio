@@ -79,6 +79,13 @@ canvas {
   left: 0;
   z-index: -1;
 }
+.flag-img {
+  height: 24px;
+  width: 24px;
+  object-fit: cover;
+  margin-top: 14px;
+  padding-top: 4px;
+}
 .app-container {
   width: 100%;
   display: flex;
@@ -179,7 +186,9 @@ canvas {
   width: 100%;
   color: #1ff1c2;
 }
-
+.hero-name {
+  font-size: 48px;
+}
 /* hero-text */
 /* body {
 	margin: 0;
@@ -498,6 +507,7 @@ a {
 .image {
   position: relative;
   display: flex;
+  z-index: -1;
   align-items: center;
   justify-content: center;
 }
@@ -873,17 +883,17 @@ div.ed-card > ul {
   }
 
   .title-header {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 600;
     padding-top: 5px;
   }
   .subtitle-header {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     padding-bottom: 5px;
   }
   .description-header {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     justify-content: space-between;
   }
@@ -2673,7 +2683,9 @@ div.card ul li a {
   .title {
     font-size: 1.8rem;
   }
-
+  .hero-name {
+    font-size: 28px;
+  }
   .text {
     font-size: 1.1rem;
   }
@@ -2760,11 +2772,17 @@ div.card ul li a {
   .contact-form .row {
     grid-column-gap: 0.3rem;
   }
-
+  
   .contact-input {
     font-size: 0.8rem;
     padding: 0.8rem 1.4rem;
     margin: 0.25rem 0;
+  }
+  .flag-img {
+    height: 18px;
+    width: 18px;
+    object-fit: cover;
+    margin-top: 6px;
   }
 }
 
